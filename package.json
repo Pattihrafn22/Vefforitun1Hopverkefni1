@@ -1,0 +1,23 @@
+{
+  "name": "vefforitun1hopverkefni1",
+  "version": "1.0.0",
+  "description": "Hópverkefni 1",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pattihrafn22/Vefforitun1Hopverkefni1.git"
+  },
+  "author": "Freyja Sigurgísladóttir, Mimoza Dyla, Patrekur Hrafn Hallgrímsson",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Pattihrafn22/Vefforitun1Hopverkefni1/issues"
+  },
+  "homepage": "https://github.com/Pattihrafn22/Vefforitun1Hopverkefni1#readme",
+  "devDependencies": {
+    "browser-sync": "^2.26.3"
+  },
+  "dependencies": {}
+}
