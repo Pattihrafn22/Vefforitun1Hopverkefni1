@@ -24,12 +24,136 @@ html { /* stylelint-disable-line */
 @import "scss/...";
 
 
-.image{
-	width: 50%;
-	height:50%;
+@import "scss/config";
+
+* {
+  padding: 0;
+  margin: 0;
 }
 
-h1 {
-  font-size: 20px;
-  color: pink;
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html { /* stylelint-disable-line */
+  box-sizing: border-box;
+  overflow-x: hidden;
+
+  font-size: 16px;
+  // TODO fleiri grunn stillingar
+}
+
+
+
+// TODO sækja allar sass skrár
+@import "scss/...";
+
+
+
+main {
+  margin: 0 auto;
+  max-width: 1450px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+h2 {
+  font-size: 36px;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 24px;
+  font-family: 'Oswald', sans-serif;
+  text-align: left;
+  margin-top: 20px;
+}
+
+p {
+  font-family: 'Open Sans', sans-serif;
+}
+
+.image {
+  max-width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.cartImage {
+  width: 15px;
+  height: 15px;
+  align-items: left;
+  margin-right: 3px;
+  margin-left: 5px;
+
+}
+
+button {
+  background: #ffffff;
+  font-family: 'Open Sans', sans-serif;
+  padding: 5px;
+  margin: 3px;
+}
+
+.kaupaTakki{
+  background: #cc9694;
+  width: 250px;
+  justify-content: center;
+  margin: auto;
+}
+
+input{
+  height: 33px;
+  width: 100px;
+}
+
+.grid {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+
+.grid__row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.grid__col {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+@media (max-width: 599px){
+  .grid__col-sm-6{
+    width: 100%;
+  }
+}
+
+.grid__col-sm-6{
+  width: 50%;
+}
+
+
+
+/* X < 699px  */
+@media (max-width: 699px) {
+  .grid__col{
+    width: 100%;
+  }
+
+  .card__col{
+    width: 100%;
+  }
+}
+
+
+/* 1490 < X */
+@media (min-width: 1490px){
+  main{
+    padding: 0;
+  }
 }
