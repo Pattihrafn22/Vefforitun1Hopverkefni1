@@ -15,31 +15,38 @@
         <!--<h1>Karfa</h1>-->
       </header>
         <div class="grid">
-
+        <h1> Vörur í körfu </h1> 
         <div class="grid__row">
-          <div class="grid__col">
-            <h2> Vörur í körfu </h2>
+          <div class="grid__col col-4 col-sm-12">
+          <!-- 33.33% almennt, 100% í minni upplausn-->
             <img class="image" src="../img/watch.jpg" alt="Ótrúlegt úr">
+          </div> 
+          <div class="grid__col col-8 col-sm-12">
+          <!-- 66.66% almennt, 100% í minni upplausn-->
             <h2> Ótrúlegt úr </h2>
             <p> Hvað er klukkan? Þetta úr mun svara því hvenær sem er </p> 
-            <h3> 99.900 kr.- </h3>
-            <p>Fjöldi: </p>
-            <input type="number" name="fjöldi" min="1" value="1"> 
+            <div class="anchor"> 
+              <h3> 99.900 kr.- </h3>
+              <p>Fjöldi: </p>
+              <input type="number" name="fjöldi" min="1" value="1"> 
 
-            <button type="button" name="uppfaera">
-            <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
-            Uppfæra
-            </button>
-            <button type="button" name="eyda">
-            <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
-            Eyða úr körfu
-            </button>
+              <button type="button" name="uppfaera">
+              <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
+              Uppfæra
+              </button>
+              <button type="button" name="eyda">
+              <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
+              Eyða úr körfu
+              </button>
+            </div>
     
           </div>
         </div>
         <div class="grid__row">
-          <div class="grid__col">
+          <div class="grid__col col-4 col-sm-12">
             <img class="image" src="../img/headphones.jpg" alt="Ótrúlegt úr">
+          </div>
+          <div class="grid__col col-8 col-sm-12">
             <h2>Hágæða heyrnatól</h2>
             <p> Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða? </p> 
             <h3> 39.999 kr.- </h3>
@@ -59,11 +66,11 @@
         </div>
         <div class="grid__row">
           <div class="grid__col grid__col-sm-6">
-            <h2> Sendingarupplýsingar </h2>
-            Nafn:<input type="text" name="nafn"><br>
-            Heimilisfang:<input type="text" name="Heimilisfang"><br>
-            Póstnúmer:  
-              <select name="age" id="age" size="1">
+            <h2> Sendingarupplýsingar <br> </h2>
+            Nafn: <input class="rightaligninput" type="text" name="nafn"> <br>
+            Heimilisfang:<input class="rightaligninput" type="text" name="Heimilisfang"> <br>
+            Póstnúmer:     
+              <select class="rightaligndropdown" name="age" id="age" size="1">
                 <option> Hér eiga að koma póstnúmer </option>
                 <option value="test"> Test </option>
               </select><br>
@@ -72,8 +79,8 @@
           </div>
           <div class="grid__col grid__col-sm-6">
             <h2> Greiðslupplýsingar </h2>
-            Kortanúmer: <input type="text" name="kortanumer" align="right"><br>
-            Korthafi: <input type="text" name="korthafi"><br>
+            Kortanúmer: <input class="rightaligninput" type="text" name="kortanumer" align="right"><br>
+            Korthafi: <input class="rightaligninput" type="text" name="korthafi"><br>
             Gildistími:
             Mán 
             <select name="man" id="man">
