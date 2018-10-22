@@ -3,16 +3,30 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Oswald:400,700" rel="stylesheet">
     <title>Vöruhúsið</title>
 
     <link rel="stylesheet" href="grid.css">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-  	<main>
-      <h1>Vöruhúsið</h1>
-      <!-- Hér þarf að setja header. Linkar á forsíðu, vörur, starfsfólk og körfu -->
-
+      <header class="header">
+          <h1 class="header__title">Vöruhúsið</h1>
+          <div class="header__sub">
+            <div class="header__box"></div>
+              <ul class="header__links">
+                <li><a class="header__link" href="index.html">FORSÍÐA</a></li>
+                <li><a class="header__link" href="pages/products.html">VÖRUR</a></li>
+                <li><a class="header__link" href="pages/staff.html">STARFSFÓLK</a></li>
+              </ul>
+            <div class="header__cart">
+              <a class="header__link" href="pages/cart.html">
+                <img class="header__image" src="img/cart.svg"></img>Karfa (3)
+              </a>
+            </div>
+          </div>         
+        </header>
+    <main>
       <div class="grid">
 
         <div class = "grid__row">
@@ -38,9 +52,38 @@
         </div>
 
       </div>
-
-      <!-- Hér kemur footer. -->
-  	</main>
+    </main>
+    <footer>
+        <ul>
+          <h3>Vöruflokkar</h3>
+          <li><a href="products.html">Nauðsynjavörur</a></li>
+          <li><a href="products.html">Frábærar vörur</a></li>
+          <li><a href="products.html">Ómissandi vörur</a></li>
+          <li><a href="products.html">Ótrúlegar vörur</a></li>
+          <li><a href="products.html">Magnaðar vörur</a></li>
+        </ul>
+        <ul>
+          <h3>Vöruflokkar</h3>
+          <li><a href="products.html">Trylltar vörur</a></li>
+          <li><a href="products.html">Geggjaðar vörur</a></li>
+          <li><a href="products.html">Svakalegar vörur</a></li>
+          <li><a href="products.html">Fáránlegar vörur</a></li>
+          <li><a href="products.html">Klikkaðar vörur</a></li>
+        </ul>
+        <ul>
+            <h3>Vöruflokkar</h3>
+            <li><a href="products.html">Nýjar vörur</a></li>
+            <li><a href="products.html">Gamlar vörur</a></li>
+            <li><a href="products.html">Skrítnar vörur</a></li>
+        </ul>
+        <ul>
+            <h3>Síður</h3>
+            <li><a href="products.html">Allar vörur</a></li>
+            <li><a href="products.html">Starfsfólk</a></li>
+            <li><a href="products.html">Karfa</a></li>
+        </ul>
+        <p>© 2018 Vöruhúsið</p>
+        </footer>
 
   </body>
 </html>
