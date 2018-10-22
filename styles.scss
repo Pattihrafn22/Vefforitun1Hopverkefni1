@@ -19,12 +19,23 @@ html { /* stylelint-disable-line */
 }
 
 
-
-// TODO sækja allar sass skrár
-@import "scss/...";
-
-
 @import "scss/config";
+* {
+  padding: 0;
+  margin: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  /* stylelint-disable-line */
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
 
 * {
   padding: 0;
@@ -37,51 +48,43 @@ html { /* stylelint-disable-line */
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html {
+  /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
-
   font-size: 16px;
-  // TODO fleiri grunn stillingar
 }
-
-
-
-// TODO sækja allar sass skrár
-@import "scss/...";
-
-
 
 main {
   margin: 0 auto;
   max-width: 1450px;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
-h2 {
+h1 {
+  margin-left: 20px;
+}
+
+h1,h2 {
   font-size: 36px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: left;
   margin-top: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 10px; 
 }
 
 h3 {
   font-size: 24px;
-  font-family: 'Oswald', sans-serif;
+  font-family: "Oswald", sans-serif;
   text-align: left;
   margin-top: 20px;
 }
 
 p {
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
 }
 
 .image {
   max-width: 100%;
-  margin-top: 10px;
-  margin-bottom: 10px;
 }
 
 .cartImage {
@@ -89,28 +92,39 @@ p {
   height: 15px;
   align-items: left;
   margin-right: 3px;
-  margin-left: 5px;
-
+  margin-left: 5px; 
 }
 
 button {
   background: #ffffff;
-  font-family: 'Open Sans', sans-serif;
+  font-family: "Open Sans", sans-serif;
   padding: 5px;
-  margin: 3px;
+  margin: 3px; 
 }
 
-.kaupaTakki{
+button:hover{
+  background-color: #cc9694
+}
+
+.kaupaTakki {
   background: #cc9694;
   width: 250px;
   justify-content: center;
   margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;  
 }
 
-input{
+.kaupaTakki:hover{
+  background-color:#000000;
+  color: #ffffff;
+}
+
+input {
   height: 33px;
   width: 100px;
 }
+
 
 .grid {
   max-width: 72rem;
@@ -127,33 +141,60 @@ input{
   padding-right: 20px;
 }
 
-@media (max-width: 599px){
+.col-4{
+  width: 35%;  /* Ætti að vera 33.33% en mynd passar betur með 35%?? */
+}
+
+.col-8{
+  width: 65%;
+}
+
+.grid__col-sm-6 {
+  width: 50%;
+}
+
+
+/* X < 699px  */
+@media (max-width: 699px) {
+  .grid__col {
+    width: 100%;
+    flex-direction: column;
+  }
+
   .grid__col-sm-6{
     width: 100%;
   }
 }
 
-.grid__col-sm-6{
-  width: 50%;
-}
-
-
-
-/* X < 699px  */
-@media (max-width: 699px) {
+@media (max-width: 1200px) AND (min-width: 700px){
   .grid__col{
-    width: 100%;
+    flex-direction: row;
   }
-
-  .card__col{
-    width: 100%;
+  .col-8{
+    padding: 0;
+    margin-bottom: 40px;
+  }
+  .col-4{
+    margin-bottom: 40px;
+  }
+  h2{
+    margin-top: 0;
+  }
+  h3{
+    margin-top: 40px;
+  }
+  .anchor{
+    justify-content: ;
+    background: #cc9694;
   }
 }
-
 
 /* 1490 < X */
-@media (min-width: 1490px){
-  main{
+@media (min-width: 1490px) {
+  main {
     padding: 0;
   }
 }
+
+
+/*# sourceMappingURL=styles.css.map */
