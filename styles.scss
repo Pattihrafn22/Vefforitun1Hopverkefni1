@@ -1,40 +1,4 @@
 @import "scss/config";
-* {
-  padding: 0;
-  margin: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html { /* stylelint-disable-line */
-  box-sizing: border-box;
-  overflow-x: hidden;
-
-  // TODO fleiri grunn stillingar
-}
-
-
-@import "scss/config";
-* {
-  padding: 0;
-  margin: 0;
-}
-
-*,
-*::before,
-*::after {
-  box-sizing: inherit;
-}
-
-html {
-  /* stylelint-disable-line */
-  box-sizing: border-box;
-  overflow-x: hidden;
-}
 
 * {
   padding: 0;
@@ -90,7 +54,6 @@ p {
 .cartImage {
   width: 15px;
   height: 15px;
-  align-items: left;
   margin-right: 3px;
   margin-left: 5px;
 }
@@ -98,12 +61,23 @@ p {
 button {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   padding: 5px;
   margin: 3px;
+  border-radius: 5px;
+  border-color: #000000;
+  border-width: thin;
+}
+
+.buttonlayout{
+  display: flex;
+  justify-content: space-around;
 }
 
 button:hover{
-  background-color: #cc9694
+  background-color: #cc9694;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
 }
 
 .kaupaTakki {
@@ -118,9 +92,18 @@ button:hover{
 .kaupaTakki:hover{
   background-color:#000000;
   color: #ffffff;
+  cursor: pointer;
+  transition: background-color 300ms ease-in-out;
 }
 
-.hlutur{
+.box{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: flex-end;
+}
+
+.flex{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -128,14 +111,21 @@ button:hover{
     margin-bottom: 30px;
 }
 
+
 .rightaligninput{
     height: auto;
-    width: 66.66%;
+    width: 65%;
 }
 
 input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
   height: 33px;
   width: 100px;
+  padding-left: 5px;
+  border-radius: 4px;
+  border-color: #000000;
+  border-width: thin;
 }
 
 
@@ -203,6 +193,7 @@ input {
 
 /* 1200px < X */
 @media (min-width: 1200px){
+
   .grid__col{
     max-width: 100%;
     flex-direction: column;
@@ -213,6 +204,8 @@ input {
   }
   .col-4{
     margin-bottom: 40px;
+    max-width: 33.33%;
+    margin-right: -20px;
   }
   h2{
     margin-top: 0;
@@ -226,6 +219,11 @@ input {
   .pulled{
     margin-right: 160px;
   }
+  .image{
+    max-width: 100%;
+  }
+
+
 }
 
 /*# sourceMappingURL=styles.css.map */
