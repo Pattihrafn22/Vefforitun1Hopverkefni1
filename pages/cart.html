@@ -15,31 +15,29 @@
         <!--<h1>Karfa</h1>-->
       </header>
         <div class="grid">
-        <h1> Vörur í körfu </h1> 
+        <h1> Vörur í körfu </h1>
         <div class="grid__row">
           <div class="grid__col col-4 col-sm-12">
           <!-- 33.33% almennt, 100% í minni upplausn-->
             <img class="image" src="../img/watch.jpg" alt="Ótrúlegt úr">
-          </div> 
+          </div>
           <div class="grid__col col-8 col-sm-12">
           <!-- 66.66% almennt, 100% í minni upplausn-->
             <h2> Ótrúlegt úr </h2>
-            <p> Hvað er klukkan? Þetta úr mun svara því hvenær sem er </p> 
-            <div class="anchor"> 
+            <p> Hvað er klukkan? Þetta úr mun svara því hvenær sem er </p>
               <h3> 99.900 kr.- </h3>
               <p>Fjöldi: </p>
-              <input type="number" name="fjöldi" min="1" value="1"> 
+              <input type="number" name="fjöldi" min="1" value="1">
 
               <button type="button" name="uppfaera">
-              <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
+              <img class="cartImage" src="../img/cart.svg" alt="karfa">
               Uppfæra
               </button>
               <button type="button" name="eyda">
-              <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
+              <img class="cartImage" src="../img/cart.svg" alt="karfa">
               Eyða úr körfu
               </button>
-            </div>
-    
+
           </div>
         </div>
         <div class="grid__row">
@@ -48,17 +46,17 @@
           </div>
           <div class="grid__col col-8 col-sm-12">
             <h2>Hágæða heyrnatól</h2>
-            <p> Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða? </p> 
+            <p> Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða? </p>
             <h3> 39.999 kr.- </h3>
             <p>Fjöldi: </p>
-            <input type="number" name="fjöldi" min="1" value="2"> 
+            <input type="number" name="fjöldi" min="1" value="2">
 
             <button type="button" name="uppfaera">
-            <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
-             Uppfæra 
+            <img class="cartImage" src="../img/cart.svg" alt="karfa">
+             Uppfæra
             </button>
             <button type="button" name="eyda">
-            <img class="cartImage" src="../img/cart.svg" alt="karfa"> 
+            <img class="cartImage" src="../img/cart.svg" alt="karfa">
             Eyða úr körfu
             </button>
 
@@ -66,53 +64,59 @@
         </div>
         <div class="grid__row">
           <div class="grid__col grid__col-sm-6">
+
             <h2> Sendingarupplýsingar <br> </h2>
-            Nafn: <input class="rightaligninput" type="text" name="nafn"> <br>
-            Heimilisfang:<input class="rightaligninput" type="text" name="Heimilisfang"> <br>
-            Póstnúmer:     
-              <select class="rightaligndropdown" name="age" id="age" size="1">
-                <option> Hér eiga að koma póstnúmer </option>
-                <option value="test"> Test </option>
-              </select><br>
-            <!-- Þarf einhvernveginn að ná í gögnin úr postnumer.txt og setja inn í þetta drop down menu. Eða bara setja allan texta hér inn?? -->
+              <a class="hlutur pushed"><label for="nafn">Nafn:</label>
+              <input class="rightaligninput" type="text" name="nafn"></a>
+              <a class="hlutur pushed"><label for"heimilisfang">Heimilisfang:</label>
+              <input class="rightaligninput" type="text" name="Heimilisfang"></a>
+              <a class="hlutur pushed"><label for="postnumer">Póstnúmer:</label>
+                <select class="rightaligninput" name="age" id="age" size="1">
+                  <option> Hér eiga að koma póstnúmer </option>
+                  <option value="test"> Test </option>
+                </select></a>
+              <!-- Þarf einhvernveginn að ná í gögnin úr postnumer.txt og setja inn í þetta drop down menu. Eða bara setja allan texta hér inn?? -->
 
           </div>
           <div class="grid__col grid__col-sm-6">
             <h2> Greiðslupplýsingar </h2>
-            Kortanúmer: <input class="rightaligninput" type="text" name="kortanumer" align="right"><br>
-            Korthafi: <input class="rightaligninput" type="text" name="korthafi"><br>
-            Gildistími:
-            Mán 
-            <select name="man" id="man">
-              <option value="1">01</option>
-              <option value="2">02</option>
-              <option value="3">03</option>
-              <option value="4">04</option>
-              <option value="5">05</option>
-              <option value="6">06</option>
-              <option value="7">07</option>
-              <option value="8">08</option>
-              <option value="9">09</option>
-              <option value="10">10</option>
-              <option value="11">11</option>
-              <option value="12">12</option>
-            </select>
-            Ár
-            <select name="ar" id="ar">
-              <option value="2018">2018</option>
-              <option value="2019">2019</option>
-              <option value="2020">2020</option>
-              <option value="2021">2021</option>
-              <option value="2022">2022</option>
-              <option value="2023">2023</option>
-              <option value="2024">2024</option>
-              <option value="2025">2025</option>
-              <option value="2026">2026</option>
-              <option value="2027">2027</option>
-              <option value="2028">2028</option>
-              <option value="2029">2029</option>
-              <option value="2030">2030</option>
-            </select>
+            <ul class="upplysingar">
+              <a class="hlutur pulled"><label for="kortanumer">Kortanúmer:</label>
+              <input class="rightaligninput" type="text" name="kortanumer" align="right"></a>
+              <a class="hlutur pulled"><label for="korthafi">Korthafi:</label>
+              <input class="rightaligninput" type="text" name="korthafi"></a>
+              <a class="hlutur pulled"><label for="gildistimi">Gildistími:</label>
+              &nbsp;<label for"=man">Mán </label>
+              <select name="man" id="man">
+                <option value="1">01</option>
+                <option value="2">02</option>
+                <option value="3">03</option>
+                <option value="4">04</option>
+                <option value="5">05</option>
+                <option value="6">06</option>
+                <option value="7">07</option>
+                <option value="8">08</option>
+                <option value="9">09</option>
+                <option value="10">10</option>
+                <option value="11">11</option>
+                <option value="12">12</option>
+              </select>
+              <label for ="ar">Ár</label>
+              <select name="ar" id="ar">
+                <option value="2018">2018</option>
+                <option value="2019">2019</option>
+                <option value="2020">2020</option>
+                <option value="2021">2021</option>
+                <option value="2022">2022</option>
+                <option value="2023">2023</option>
+                <option value="2024">2024</option>
+                <option value="2025">2025</option>
+                <option value="2026">2026</option>
+                <option value="2027">2027</option>
+                <option value="2028">2028</option>
+                <option value="2029">2029</option>
+                <option value="2030">2030</option>
+              </select></a>
           </div>
         </div>
             <div>
