@@ -1,5 +1,4 @@
 @import "scss/config";
-
 * {
   padding: 0;
   margin: 0;
@@ -68,15 +67,15 @@ h1,h2 {
   font-size: 36px;
   font-family: "Oswald", sans-serif;
   text-align: left;
-  margin-top: 20px;
-  margin-bottom: 10px; 
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 24px;
+  font-size: 21px;
   font-family: "Oswald", sans-serif;
   text-align: left;
   margin-top: 20px;
+  margin-bottom: 10px;
 }
 
 p {
@@ -85,6 +84,7 @@ p {
 
 .image {
   max-width: 100%;
+  margin-top: 10px;
 }
 
 .cartImage {
@@ -92,14 +92,14 @@ p {
   height: 15px;
   align-items: left;
   margin-right: 3px;
-  margin-left: 5px; 
+  margin-left: 5px;
 }
 
 button {
   background: #ffffff;
   font-family: "Open Sans", sans-serif;
   padding: 5px;
-  margin: 3px; 
+  margin: 3px;
 }
 
 button:hover{
@@ -112,12 +112,25 @@ button:hover{
   justify-content: center;
   margin: auto;
   margin-top: 20px;
-  margin-bottom: 20px;  
+  margin-bottom: 20px;
 }
 
 .kaupaTakki:hover{
   background-color:#000000;
   color: #ffffff;
+}
+
+.hlutur{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.rightaligninput{
+    height: auto;
+    width: 66.66%;
 }
 
 input {
@@ -139,6 +152,8 @@ input {
 .grid__col {
   padding-left: 20px;
   padding-right: 20px;
+  margin-bottom: 20px;
+  max-width: 100%;
 }
 
 .col-4{
@@ -166,13 +181,14 @@ input {
   }
 }
 
+/* 700px < X < 1199px */
 @media (max-width: 1200px) AND (min-width: 700px){
   .grid__col{
-    flex-direction: row;
+    flex-direction: column;
   }
   .col-8{
     padding: 0;
-    margin-bottom: 40px;
+    padding-bottom: 10px;
   }
   .col-4{
     margin-bottom: 40px;
@@ -181,20 +197,35 @@ input {
     margin-top: 0;
   }
   h3{
-    margin-top: 40px;
-  }
-  .anchor{
-    justify-content: ;
-    background: #cc9694;
+    margin-top: 30px;
   }
 }
 
-/* 1490 < X */
-@media (min-width: 1490px) {
-  main {
+/* 1200px < X */
+@media (min-width: 1200px){
+  .grid__col{
+    max-width: 100%;
+    flex-direction: column;
+  }
+  .col-8{
     padding: 0;
+    padding-bottom: 10px;
+  }
+  .col-4{
+    margin-bottom: 40px;
+  }
+  h2{
+    margin-top: 0;
+  }
+  h3{
+      margin-top: 30px;
+  }
+  .pushed{
+    margin-left: 160px;
+  }
+  .pulled{
+    margin-right: 160px;
   }
 }
-
 
 /*# sourceMappingURL=styles.css.map */
