@@ -2,6 +2,7 @@
 
 *.md text
 *.css text
+*.scss text
 *.js text
 *.ejs text
 *.json text
