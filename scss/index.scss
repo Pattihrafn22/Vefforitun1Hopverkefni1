@@ -88,16 +88,18 @@
 }
 
 // EFNI Í INDEX
-.grid {
-  max-width: $max-width;
-  margin: 0 auto;
-}
-.grid__row {
-  display: flex;
-  flex-direction: row;
-}
-.grid__col {
-  width: 50%;
+.iMain {
+  &__grid {
+    max-width: $max-width;
+    margin: 0 auto;
+  }
+  &__row {
+    display: flex;
+    flex-direction: row;
+  }
+  &__col {
+    width: 50%;
+  }
 }
 
 // FÓTUR Í INDEX
