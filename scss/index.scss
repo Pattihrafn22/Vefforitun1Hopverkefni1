@@ -1,5 +1,6 @@
+@import "scss/config";
 // HAUS Í INDEX
-.header {
+.iHeader {
   display: flex;
   flex-direction: column;
   background-color: #afb281;
@@ -100,3 +101,76 @@
 }
 
 // FÓTUR Í INDEX
+.iFooter {
+  background-color: #cc9694;
+  width: 100%;
+  margin-top: 40px;
+
+  &__grid {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding-top: 10px;
+    padding-bottom: 60px;
+  }
+  &__row {
+    display: flex;
+    
+    margin-left: -10px;
+    margin-right: -10px;
+    
+    @media (max-width: 800px) {
+      max-width: 100%;
+      margin: 10px;
+  
+      flex-wrap: wrap;
+    }
+  }
+  &__col { 
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 25%;
+
+    @media (max-width:800px) {
+      width: 50%;
+    }
+  }
+
+  &__title {
+    font-size: 21px;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-weight: bold;
+    color: #000000;
+    padding-bottom: 10px;
+    padding-top: 30px;
+  }
+  &__links {
+    list-style: none;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__link {
+    color: #fcffd2;
+    transition-property: color;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+    line-height: 1.8;
+  }
+
+  &__link:hover {
+    color: #afb281;
+  }
+
+  &__credit {
+    font-family: 'Open Sans', helvetica, sans-serif;
+    font-size: 12px;
+    margin: 0 auto;
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 40px;
+  }
+}

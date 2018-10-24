@@ -1,3 +1,4 @@
+@import "scss/config";
 // HAUS Í PRODUCTS 
 .pHeader {
   display: flex;
@@ -147,9 +148,9 @@
 
     display: flex;
     justify-content: space-between;
-    
   }
 }
+
 .cartImage {
   width: 20px;
   height: 20px;
@@ -157,7 +158,7 @@
   margin-left: 10px;
 }
 input {
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 16px;
   border-radius: 3px;
   border-color: #000000;
@@ -176,7 +177,7 @@ input {
 }
 button {
   background-color: #ffffff;
-  font-family: "Open Sans", sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 16px;
   border-radius: 3px;
   border-color: #000000;
@@ -207,7 +208,7 @@ button:hover {
   margin-top: 10px;
 }
 .product__amount {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 .product__title {
   font-family: 'Oswald', Verdana, serif;
@@ -219,7 +220,7 @@ button:hover {
   word-break: break-word;
 }
 .product__text {
-  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, sans-serif;
 }
 
 // FÓTUR Í PRODUCTS 
@@ -259,7 +260,7 @@ button:hover {
 
   &__title {
     font-size: 21px;
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-family: 'Open Sans', helvetica, sans-serif;
     font-weight: bold;
     color: #000000;
     padding-bottom: 10px;
@@ -277,7 +278,7 @@ button:hover {
     transition-property: color;
     transition-duration: 300ms;
     transition-timing-function: ease-in-out;
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-family: 'Open Sans', helvetica, sans-serif;
     font-size: 16px;
     text-decoration: none;
     line-height: 1.8;
@@ -288,7 +289,7 @@ button:hover {
   }
 
   &__credit {
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-family: 'Open Sans', helvetica, sans-serif;
     font-size: 12px;
     margin: 0 auto;
     text-align: center;
