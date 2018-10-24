@@ -11,9 +11,13 @@
   box-sizing: inherit;
 }
 
-html { /* stylelint-disable-line */
+html {
+  /* stylelint-disable-line */
   box-sizing: border-box;
   overflow-x: hidden;
+
+
+/*# sourceMappingURL=styles.css.map */
   // TODO fleiri grunn stillingar
   font-size: 16px;
 }
@@ -22,3 +26,4 @@ html { /* stylelint-disable-line */
 @import "scss/config.scss";
 @import "scss/products.scss";
 @import "scss/index.scss";
+@import "scss/cart.scss";
