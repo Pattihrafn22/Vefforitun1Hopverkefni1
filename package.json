@@ -10,7 +10,7 @@
     "sass-watch": "node-sass --source-map-embed --watch *.scss --recursive styles.css",
     "lint-css": "stylelint styles.css --syntax css",
     "lint-scss": "stylelint styles.scss --syntax scss",
-    "dev": "npm-run-all --parallel sass browser-sync"
+    "dev": "npm-run-all --parallel sass sass-watch browser-sync"
   },
   "repository": {
     "type": "git",

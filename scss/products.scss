@@ -15,7 +15,7 @@
   &__sub {
     display:flex;
     align-items: stretch;
-    max-width: $max-width;
+    max-width: 1200px;
     width: 100vw;
 
     @media (max-width: 700px) {
@@ -88,7 +88,7 @@
 
 // EFNI Í PRODUCTS 
 .pMain {
-  max-width: $max-width;
+  max-width: 1200px;
   margin: 0 auto;
 }
 .pMain__grid {
@@ -103,6 +103,7 @@
 
   display: flex;
   flex-wrap: wrap;
+  margin-bottom: 40px;
   
   @media (max-width: 800px) {
     max-width: 100%;
@@ -135,18 +136,89 @@
     width: 100%;
   }
 }
-.product__buttonImg {
-  max-width: 1%;
+.card__footer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+
+  &__row {
+    max-width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    
+  }
 }
-.product__title, .product__price {
+.cartImage {
+  width: 20px;
+  height: 20px;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: #000000;
+  border-width: thin;
+  padding: 6px;
+  padding-right: 60px;
+
+  @media (max-width:800px) {
+    padding: 0px;
+    padding-right: 60px;
+  }
+  @media (max-width: 500px) {
+    padding: 2px;
+    padding-right: 60px;
+  }
+}
+button {
+  background-color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: #000000;
+  border-width: thin;
+  transition: background-color 300ms ease-in-out; 
+  padding: 6px;
+
+  @media (max-width:800px) {
+    padding: 0px;
+    padding-right: 60px;
+  }
+  @media (max-width: 500px) {
+    padding: 2px;
+    padding-right: 60px;
+  }
+}
+button:hover {
+  background-color: #cc9694;
+  cursor: pointer;
+}
+.product__price {
   font-family: 'Oswald', Verdana, serif;
   font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  word-break: break-word;
+  margin-bottom: 10px; 
+  margin-top: 10px;
+}
+.product__amount {
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+}
+.product__title {
+  font-family: 'Oswald', Verdana, serif;
+  font-weight: bold;
+  margin-top: 40px;
   margin-bottom: 20px;
-  font-size: 1.375em;
+  font-size: 36px;
   line-height: 1;
   word-break: break-word;
 }
-.product__text, .product__amount {
+.product__text {
   font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 }
 
@@ -157,9 +229,9 @@
   margin-top: 40px;
 
   &__grid {
-    max-width: $max-width;
+    max-width: 1200px;
     margin: 0 auto;
-    padding-top: 40px;
+    padding-top: 10px;
     padding-bottom: 60px;
   }
   &__row {
@@ -186,11 +258,12 @@
   }
 
   &__title {
-    font-size: 18px;
+    font-size: 21px;
     font-family: 'Open Sans', helvetica, arial, sans-serif;
     font-weight: bold;
     color: #000000;
     padding-bottom: 10px;
+    padding-top: 30px;
   }
   &__links {
     list-style: none;
