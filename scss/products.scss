@@ -91,43 +91,44 @@
 .pMain {
   max-width: 1200px;
   margin: 0 auto;
-}
-.pMain__grid {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  padding-bottom: 60px;
-}
-.pMain__row {
-  margin-left: -10px;
-  margin-right: -10px;
 
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 40px;
-  
-  @media (max-width: 800px) {
-    max-width: 100%;
-    margin: 10px;
-
+  &__grid {
+    display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 60px;
   }
-  @media (max-width: 500px) {
-    max-width: 100%;
-    margin: 10px;
-
-    flex-direction: column;
+  &__row {
+    margin-left: -10px;
+    margin-right: -10px;
+  
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+    
+    @media (max-width: 800px) {
+      max-width: 100%;
+      margin: 10px;
+  
+      flex-wrap: wrap;
+    }
+    @media (max-width: 500px) {
+      max-width: 100%;
+      margin: 10px;
+  
+      flex-direction: column;
+    }
   }
-}
-.pMain__col {
-  padding: 40px 10px 0 10px;
-  width: 33.3333333333%;
-
-  @media (max-width:800px) {
-    width: 50%;
-  }
-  @media (max-width: 500px) {
-    width: 100%;
+  &__col {
+    padding: 40px 10px 0 10px;
+    width: 33.3333333333%;
+  
+    @media (max-width:800px) {
+      width: 50%;
+    }
+    @media (max-width: 500px) {
+      width: 100%;
+    }
   }
 }
 
@@ -150,13 +151,39 @@
     justify-content: space-between;
   }
 }
+.card__container {
+}
+.container1 {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+.container2 {
+}
 
+.button2 {
+  background-color: #ffffff;
+  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-size: 16px;
+  border-radius: 3px;
+  border-color: #000000;
+  border-width: thin;
+  transition: background-color 300ms ease-in-out; 
+}
+.text2 {
+  font-family: 'Oswald', Verdana, serif;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 1;
+  word-break: break-word;
+}
 .cartImage {
   width: 20px;
   height: 20px;
   margin-right: 10px;
   margin-left: 10px;
 }
+
 input {
   font-family: 'Open Sans', Helvetica, sans-serif;
   font-size: 16px;
