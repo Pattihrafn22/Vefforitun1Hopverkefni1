@@ -1,23 +1,24 @@
 @import "scss/config";
-// HAUS Í PRODUCTS 
+
+/* HAUS Í PRODUCTS */
 .pHeader {
   display: flex;
+  margin: auto;
   flex-direction: column;
   background-color: #afb281;
-  margin: auto;
   align-items: center;
 
   &__title {
+    font-family: Oswald, Verdana, serif;
     font-size: 60px;
     text-align: center;
-    font-family: 'Oswald', Verdana, serif;
   }
 
   &__sub {
-    display:flex;
+    display: flex;
     align-items: stretch;
-    max-width: 1200px;
     width: 100vw;
+    max-width: 1200px;
 
     @media (max-width: 700px) {
       flex-direction: column;
@@ -34,12 +35,12 @@
   }
 
   &__links {
-    display:inline-flex;
-    flex-direction: row;
+    display: inline-flex;
+    width: 33.3333333333%;
     list-style: none;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-    width: 33.3333333333%;
 
     @media (max-width: 700px) {
       width: 100%;
@@ -47,25 +48,27 @@
   }
 
   &__link {
-    display:inline-flex;
-    color: #000000;
-    transition-property: color;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
+    display: inline-flex;
     padding: 10px;
-    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-family: "Open Sans", helvetica, arial, sans-serif;
     font-size: 14px;
+    color: #000;
     text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    transition-property: color;
   }
-  li {
+
+  .li {
     font-weight: bold;
   }
-  li:nth-of-type(2) {
+
+  .li:nth-of-type(2) {
     text-decoration: underline;
   }
 
   &__link:hover {
-    color: #ffffff;
+    color: #fff;
   }
 
   &__cart {
@@ -87,7 +90,7 @@
   }
 }
 
-// EFNI Í PRODUCTS 
+/* EFNI Í PRODUCTS */
 .pMain {
   max-width: 1200px;
   margin: 0 auto;
@@ -98,31 +101,34 @@
     justify-content: space-between;
     padding-bottom: 20px;
   }
+
   &__row {
-    margin-left: -10px;
-    margin-right: -10px;
-  
     display: flex;
+    margin-right: -10px;
+    margin-left: -10px;
     flex-wrap: wrap;
-    
+
     @media (max-width: 800px) {
       max-width: 100%;
       margin: 10px;
-  
       flex-wrap: wrap;
     }
     @media (max-width: 500px) {
       max-width: 100%;
       margin: 10px;
-  
       flex-direction: column;
     }
   }
+
   &__col {
-    padding: 40px 10px 30px 10px;
     width: 33.3333333333%;
-  
-    @media (max-width:800px) {
+
+    padding-top: 40px;
+    padding-right: 10px;
+    padding-bottom: 30px;
+    padding-left: 10px;
+
+    @media (max-width: 800px) {
       width: 50%;
     }
     @media (max-width: 500px) {
@@ -130,167 +136,170 @@
     }
   }
 }
+
 .product__image {
   width: 100%;
-  img {
-    width: 100%;
-  }
 }
+
+.product__img {
+  width: 100%;
+}
+
 .card__container {
   display: flex;
+  height: 43%;
   flex-direction: column;
   justify-content: space-between;
-  height: 43%;
 }
+
 .container1 {
   display: flex;
   flex-direction: column;
 }
+
 .button__container {
   display: flex;
   justify-content: space-between;
 }
 
-.cartImage {
+.pMain__cartImage {
   width: 20px;
   height: 20px;
   margin-right: 10px;
   margin-left: 10px;
 }
 
-input {
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
-  border-radius: 3px;
-  border-color: #000000;
-  border-width: thin;
-  padding: 8px;
+.pMain__input {
   width: 60%;
-  @media (max-width:800px) {
-  }
-  @media (max-width: 500px) {
-  }
-
-}
-button {
-  background-color: #ffffff;
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  padding: 8px;
+  font-family: "Open Sans", Helvetica, sans-serif;
   font-size: 16px;
-  border-radius: 3px;
-  border-color: #000000;
+  border-color: #000;
   border-width: thin;
-  transition: background-color 300ms ease-in-out; 
-  padding: 6px;
+  border-radius: 3px;
+}
+
+.pMain__button {
   width: 40%;
+  padding: 6px;
   margin-left: 10px;
-  @media (max-width:800px) {
-  }
-  @media (max-width: 500px) {
-  }
-}
-button:hover {
-  background-color: #cc9694;
-  cursor: pointer;
-  border-radius: 3px;
-  border-color: #cc9694;
+  font-family: "Open Sans", Helvetica, sans-serif;
+  font-size: 16px;
+  background-color: #fff;
+  border-color: #000;
   border-width: thin;
+  border-radius: 3px;
+  transition: background-color 300ms ease-in-out;
 }
+
+.pMain__button:hover {
+  cursor: pointer;
+  background-color: #cc9694;
+  border-width: thin;
+  border-radius: 3px;
+}
+
 .product__price {
-  font-family: 'Oswald', Verdana, serif;
-  font-weight: bold;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-family: Oswald, Verdana, serif;
   font-size: 24px;
+  font-weight: bold;
   line-height: 1;
   word-break: break-word;
-  margin-bottom: 10px; 
-  margin-top: 10px;
 }
+
 .product__amount {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
+
 .product__title {
-  font-family: 'Oswald', Verdana, serif;
-  font-weight: bold;
   margin-top: 40px;
   margin-bottom: 20px;
+  font-family: Oswald, Verdana, serif;
   font-size: 36px;
+  font-weight: bold;
   line-height: 1;
   word-break: break-word;
 }
+
 .product__text {
-  font-family: 'Open Sans', Helvetica, sans-serif;
+  font-family: "Open Sans", Helvetica, sans-serif;
 }
 
-// FÓTUR Í PRODUCTS 
+/* FÓTUR Í PRODUCTS */
 .pFooter {
-  background-color: #cc9694;
   width: 100%;
   margin-top: 40px;
+  background-color: #cc9694;
 
   &__grid {
     max-width: 1200px;
-    margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 40px;
+    margin: 0 auto;
   }
+
   &__row {
+
     display: flex;
-    
-    margin-left: -10px;
     margin-right: -10px;
-    
+    margin-left: -10px;
     @media (max-width: 800px) {
       max-width: 100%;
       margin: 10px;
-  
       flex-wrap: wrap;
     }
   }
-  &__col { 
+
+  &__col {
+
+    width: 25%;
     padding-right: 10px;
     padding-left: 10px;
-    width: 25%;
 
-    @media (max-width:800px) {
+    @media (max-width: 800px) {
       width: 50%;
     }
   }
 
   &__title {
-    font-size: 21px;
-    font-family: 'Open Sans', helvetica, sans-serif;
-    font-weight: bold;
-    color: #000000;
-    padding-bottom: 10px;
     padding-top: 30px;
+    padding-bottom: 10px;
+    font-family: "Open Sans", helvetica, sans-serif;
+    font-size: 21px;
+    font-weight: bold;
+    color: #000;
   }
+
   &__links {
-    list-style: none;
-    height: 100%;
     display: flex;
+    height: 100%;
+    list-style: none;
     flex-direction: column;
   }
 
   &__link {
-    color: #fcffd2;
-    transition-property: color;
-    transition-duration: 300ms;
-    transition-timing-function: ease-in-out;
-    font-family: 'Open Sans', helvetica, sans-serif;
+    font-family: "Open Sans", helvetica, sans-serif;
     font-size: 16px;
-    text-decoration: none;
     line-height: 1.8;
+    color: #fcffd2;
+    text-decoration: none;
+    transition-timing-function: ease-in-out;
+    transition-duration: 300ms;
+    transition-property: color;
   }
 
   &__link:hover {
-    color: #000000;
+    color: #000;
   }
 
   &__credit {
-    font-family: 'Open Sans', helvetica, sans-serif;
-    font-size: 12px;
+    padding-bottom: 40px;
     margin: 0 auto;
+    font-family: "Open Sans", helvetica, sans-serif;
+    font-size: 12px;
     text-align: center;
     justify-content: center;
-    padding-bottom: 40px;
   }
-}
+} /* stylelint-disable-line */
