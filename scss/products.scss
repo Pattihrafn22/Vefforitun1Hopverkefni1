@@ -96,7 +96,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    padding-bottom: 60px;
+    padding-bottom: 20px;
   }
   &__row {
     margin-left: -10px;
@@ -104,7 +104,6 @@
   
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 40px;
     
     @media (max-width: 800px) {
       max-width: 100%;
@@ -120,7 +119,7 @@
     }
   }
   &__col {
-    padding: 40px 10px 0 10px;
+    padding: 40px 10px 30px 10px;
     width: 33.3333333333%;
   
     @media (max-width:800px) {
@@ -131,52 +130,27 @@
     }
   }
 }
-
 .product__image {
   width: 100%;
   img {
     width: 100%;
   }
 }
-.card__footer {
-  width: 100%;
+.card__container {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
-
-  &__row {
-    max-width: 100%;
-
-    display: flex;
-    justify-content: space-between;
-  }
-}
-.card__container {
+  justify-content: space-between;
+  height: 43%;
 }
 .container1 {
   display: flex;
   flex-direction: column;
-  height: 100%;
 }
-.container2 {
+.button__container {
+  display: flex;
+  justify-content: space-between;
 }
 
-.button2 {
-  background-color: #ffffff;
-  font-family: 'Open Sans', Helvetica, sans-serif;
-  font-size: 16px;
-  border-radius: 3px;
-  border-color: #000000;
-  border-width: thin;
-  transition: background-color 300ms ease-in-out; 
-}
-.text2 {
-  font-family: 'Oswald', Verdana, serif;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 1;
-  word-break: break-word;
-}
 .cartImage {
   width: 20px;
   height: 20px;
@@ -190,17 +164,13 @@ input {
   border-radius: 3px;
   border-color: #000000;
   border-width: thin;
-  padding: 6px;
-  padding-right: 60px;
-
+  padding: 8px;
+  width: 60%;
   @media (max-width:800px) {
-    padding: 0px;
-    padding-right: 60px;
   }
   @media (max-width: 500px) {
-    padding: 2px;
-    padding-right: 60px;
   }
+
 }
 button {
   background-color: #ffffff;
@@ -211,14 +181,11 @@ button {
   border-width: thin;
   transition: background-color 300ms ease-in-out; 
   padding: 6px;
-
+  width: 40%;
+  margin-left: 10px;
   @media (max-width:800px) {
-    padding: 0px;
-    padding-right: 60px;
   }
   @media (max-width: 500px) {
-    padding: 2px;
-    padding-right: 60px;
   }
 }
 button:hover {
@@ -263,7 +230,7 @@ button:hover {
     max-width: 1200px;
     margin: 0 auto;
     padding-top: 10px;
-    padding-bottom: 60px;
+    padding-bottom: 40px;
   }
   &__row {
     display: flex;
