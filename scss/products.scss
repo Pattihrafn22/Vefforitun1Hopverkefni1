@@ -197,6 +197,9 @@ button {
 button:hover {
   background-color: #cc9694;
   cursor: pointer;
+  border-radius: 3px;
+  border-color: #cc9694;
+  border-width: thin;
 }
 .product__price {
   font-family: 'Oswald', Verdana, serif;
@@ -285,7 +288,7 @@ button:hover {
   }
 
   &__link:hover {
-    color: #afb281;
+    color: #000000;
   }
 
   &__credit {
