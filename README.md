@@ -14,7 +14,7 @@ npm run lint-scss
 Allar HTML skrár eru í möpppu: pages, fyrir utan index sem er í aðalmöppu.
 HTML skrár eru fjórar talsins, þ.e. index.html, products.html, staff.html og cart.html
 
-Sass skrár eru í möppu: scss, fyrir utan styles.scss sem er í aðalmöppu.  styles.scss kallar á import fyrir hinar skránar.  Í heildina eru 5 sass skrár: styles.scss, index.scss, products.scss, staff.scss, cart.scss og config.scss.  
+Sass skrár eru í möppu: scss, fyrir utan styles.scss sem er í aðalmöppu.  styles.scss kallar á import fyrir hinar skrárnar.  Í heildina eru 6 sass skrár: styles.scss, index.scss, products.scss, staff.scss, cart.scss og config.scss.  
 Í config eru fastar og grunnskilgreiningar sem gilda fyrir allar síður.
 
 Í json skrá er sett upp: Browsersync, sass, sass-watch, lint-scss og npm-run-all. 
