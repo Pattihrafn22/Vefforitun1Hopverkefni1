@@ -45,12 +45,12 @@
           <div class="contents_bot">
             <h3 class="grid__h3"> 99.900 kr.- </h3>
             <p>Fjöldi: </p>
-            <input type="number" name="fjöldi" min="1" value="1">
-            <button type="button" name="uppfaera">
+            <input class="cartinput shortinput" type="number" name="fjöldi" min="1" value="1">
+            <button class="cartbutton" type="button" name="uppfaera">
               <img class="cartImage" src="../img/cart.svg" alt="karfa">
               Uppfæra
             </button>
-            <button type="button" name="eyda">
+            <button class="cartbutton" type="button" name="eyda">
               <img class="cartImage" src="../img/cart.svg" alt="karfa">
               Eyða úr körfu
             </button>
@@ -70,13 +70,13 @@
           <div class="contents_bot">
             <h3 class="grid__h3"> 39.999 kr.- </h3>
             <p>Fjöldi: </p>
-            <input type="number" name="fjöldi" min="1" value="2">
+            <input class="cartinput shortinput" type="number" name="fjöldi" min="1" value="2">
 
-            <button type="button" name="uppfaera">
+            <button class="cartbutton" type="button" name="uppfaera">
               <img class="cartImage" src="../img/cart.svg" alt="karfa">
               Uppfæra
             </button>
-            <button type="button" name="eyda">
+            <button class="cartbutton" type="button" name="eyda">
               <img class="cartImage" src="../img/cart.svg" alt="karfa">
               Eyða úr körfu
             </button>
@@ -87,11 +87,11 @@
         <div class="grid__col grid__col-sm-6">
           <h2 class="grid__h2 pushed"> Sendingarupplýsingar <br> </h2>
           <a class="flex pushed"><label for="nafn">Nafn:</label>
-            <input class="rightaligninput" type="text" name="nafn"></a>
+            <input class="cartinput rightaligninput" type="text" name="nafn"></a>
           <a class="flex pushed"><label for="heimilisfang">Heimilisfang:</label>
-            <input class="rightaligninput" type="text" name="Heimilisfang"></a>
+            <input class="cartinput rightaligninput" type="text" name="Heimilisfang"></a>
           <a class="flex pushed"><label for="postnumer">Póstnúmer:</label>
-            <select class="rightaligninput" name="age" id="age" size="1">
+            <select class="cartinput rightaligninput" name="age" id="age" size="1">
               <option> -Velja póstnúmer- </option>
               <option> 101 Reykjavík</option>
               <option> 103 Reykjavík</option>
@@ -277,15 +277,15 @@
             </select></a>
         </div>
         <div class="grid__col grid__col-sm-6">
-          <h2 class="grid__h2"> Greiðslupplýsingar </h2>
+          <h2 class="grid__h2 pulled"> Greiðslupplýsingar </h2>
           <ul class="upplysingar">
             <a class="flex pulled"><label for="kortanumer">Kortanúmer:</label>
-              <input class="rightaligninput" type="text" name="kortanumer" align="right"></a>
+              <input class="cartinput rightaligninput" type="text" name="kortanumer" align="right"></a>
             <a class="flex pulled"><label for="korthafi">Korthafi:</label>
-              <input class="rightaligninput" type="text" name="korthafi"></a>
+              <input class="cartinput rightaligninput" type="text" name="korthafi"></a>
             <a class="flex pulled s-row"><label for="gildistimi">Gildistími:</label>
               &nbsp;<label for="man">Mán </label>
-              <select name="man" id="man">
+              <select class="cartinput cartselect" name="man" id="man">
                 <option value="1">01</option>
                 <option value="2">02</option>
                 <option value="3">03</option>
@@ -300,7 +300,7 @@
                 <option value="12">12</option>
               </select>
               <label for="ar">Ár</label>
-              <select name="ar" id="ar">
+              <select class="cartinput cartselect" name="ar" id="ar">
                 <option value="2018">2018</option>
                 <option value="2019">2019</option>
                 <option value="2020">2020</option>
