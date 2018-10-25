@@ -1,10 +1,9 @@
 @import url("scss/config");
 @charset "UTF-8";
 
-
-.cartmain{
-  margin: 0 auto;
+.cartmain {
   max-width: 1240px;
+  margin: 0 auto;
 }
 
 .grid__h1 {
@@ -207,7 +206,7 @@
   .iFooter__links {
     margin-left: 20px;
   }
-  
+
   .pulled {
     margin-left: -10px;
   }
