@@ -14,9 +14,9 @@
           <div class="pHeader__sub">
             <div class="pHeader__box"></div>
               <ul class="pHeader__links">
-                <li><a class="pHeader__link" href="../index.html">FORSÍÐA</a></li>
-                <li><a class="pHeader__link" href="products.html">VÖRUR</a></li>
-                <li><a class="pHeader__link" href="staff.html">STARFSFÓLK</a></li>
+                <li class="li"><a class="pHeader__link" href="../index.html">FORSÍÐA</a></li>
+                <li class="li"><a class="pHeader__link" href="products.html">VÖRUR</a></li>
+                <li class="li"><a class="pHeader__link" href="staff.html">STARFSFÓLK</a></li>
               </ul>
             <div class="pHeader__cart">
               <a class="pHeader__link" href="cart.html">
@@ -31,65 +31,67 @@
         <div class="pMain__row">
           <div class="pMain__col">
               <div class="product__image">
-                <img src="../img/watch.jpg" alt="">
+                <img class="product__img" src="../img/watch.jpg" alt="">
               </div>
-              <div class="test">
-              <div class="card__footer1">
+              <div class="card__container">
+              <div class="container1">
                 <h2 class="product__title">Ótrúlegt úr</h2>
                 <p class="product__text">Hvað er klukkan? Þetta úr mun svara því hvenær sem er.</p>
               </div>
-              <div class="card__footer2">
+              <div class="container2">
                   <p class="product__price">99.900 kr.-</p>
                   <p class="product__amount">Fjöldi:</p>
-                  <input type="text" name="fjöldi" value="1">
-                  <button class="button" name="fjöldi2"><img class="cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  <div class="button__container">
+                    <input class="pMain__input" type="text" name="fjöldi" value="1">
+                    <button class="pMain__button" name="fjöldi2"><img class="pMain__cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  </div>
+                </div>
+            </div>
+          </div>
+          <div class="pMain__col">
+              <div class="product__image">
+                <img class="product__img" src="../img/pineapple.jpg" alt="">
+              </div>
+              <div class="card__container">
+                <div class="container1">
+                  <h2 class="product__title">Ananas drykkur</h2>
+                  <p class="product__text">Fólk er alveg „ananas“ yfir þessum drykk.</p>
+                </div>
+                <div class="container2">
+                  <p class="product__price">4.900 kr.-</p>
+                  <p class="product__amount">Fjöldi:</p>
+                  <div class="button__container">
+                    <input class="pMain__input" type="text" name="fjöldi" value="1">
+                    <button class="pMain__button" name="fjöldi2"><img class="pMain__cartImage" src="../img/cart.svg">Setja í körfu</button>
+                </div>
               </div>
             </div>
           </div>
           <div class="pMain__col">
               <div class="product__image">
-                <img src="../img/pineapple.jpg" alt="">
+                <img class="product__img" src="../img/gameboy.jpg" alt="">
               </div>
-              <h2 class="product__title">Ananas drykkur</h2>
-              <p class="product__text">Fólk er alveg „ananas“ yfir þessum drykk.</p>
-              <div class="card__footer">
-                  <div class="card__footer__row">
-                      <p class="product__price">4.900 kr.-</p>
-                  </div>
-                  <div class="card__footer__row">
-                    <p class="product__amount">Fjöldi:</p>
-                  </div>
-                  <div class="card__footer__row">
-                      <input type="text" name="fjöldi" value="1">
-                      <button class="button" name="fjöldi2"><img class="cartImage" src="../img/cart.svg">Setja í körfu</button>
-                  </div>
-              </div>
-          </div>
-          <div class="pMain__col">
-              <div class="product__image">
-                <img src="../img/gameboy.jpg" alt="">
-              </div>
-              <h2 class="product__title">Gameboy</h2>
-              <p class="product__text">Hver man ekki eftir gameboy?</p>
-              <div class="card__footer">
-                <div class="card__footer__row">
+              <div class="card__container"> 
+                <div class="container1">
+                  <h2 class="product__title">Gameboy</h2>
+                  <p class="product__text">Hver man ekki eftir gameboy?</p>
+                </div>
+                <div class="container2">
                   <p class="product__price">59.999 kr.-</p>
-                </div>
-                <div class="card__footer__row">
                   <p class="product__amount">Fjöldi:</p>   
-                </div>
-                <div class="card__footer__row">
-                    <input type="text" name="fjöldi" value="1">
-                    <button class="button" name="fjöldi2"><img class="cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  <div class="button__container">
+                    <input class="pMain__input" type="text" name="fjöldi" value="1">
+                    <button class="pMain__button" name="fjöldi2"><img class="pMain__cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  </div>
                 </div>
               </div>  
           </div>
           
           <div class="pMain__col">
               <div class="product__image">
-                <img src="../img/shoes.jpg" alt="">
+                <img class="product__img" src="../img/shoes.jpg" alt="">
               </div>
-              <div class="card__container">
+              <div class="card__container"> 
                 <div class="container1">
                   <h2 class="product__title">Hlaupaskór</h2>
                   <p class="product__text">Þú munt hlaupa hratt í þessum.</p>
@@ -97,47 +99,49 @@
                 <div class="container2">
                   <p class="product__price">19.900 kr.-</p>
                   <p class="product__amount">Fjöldi:</p>  
-                  <input type="text2" name="fjöldi" value="1">
-                  <button class="button2" name="fjöldi2"><img class="cartImage" src="../img/cart.svg">Setja í körfu</button>
-              </div>
-            </div>   
+                  <div class="button__container">
+                    <input class="pMain__input" type="text" name="fjöldi" value="1">
+                    <button class="pMain__button" name="fjöldi2"><img class="pMain__cartImage" src="../img/cart.svg">Setja í körfu</button>
+                </div>
+                </div>
+              </div>   
           </div>
           <div class="pMain__col">
               <div class="product__image">
-                <img src="../img/headphones.jpg" alt="">
+                <img class="product__img" src="../img/headphones.jpg" alt="">
               </div>
-              <h2 class="product__title">Hágæða heyrnatól</h2>
-              <p class="product__text">Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?
+              <div class="card__container"> 
+                <div class="container1">
+                  <h2 class="product__title">Hágæða heyrnatól</h2>
+                  <p class="product__text">Þú munt ekki heyra neitt nema hágæða tónlist með þessum hágæða heyrnartólum. Höfum við minnst á að þau eru hágæða?
                     </p>
-              <div class="card__footer">
-                <div class="card__footer__row">
+                </div>
+                <div class="container2">
                   <p class="product__price">39.999 kr.-</p>
-                </div>
-                <div class="card__footer__row">
                   <p class="product__amount">Fjöldi:</p>
-                </div>
-                <div class="card__footer__row">
-                    <input type="text" name="fjöldi" value="1">
-                    <button class="button" name="fjöldi2"><img class="cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  <div class="button__container">
+                    <input class="pMain__input" type="text" name="fjöldi" value="1">
+                    <button class="pMain__button" name="fjöldi2"><img class="pMain__cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  </div>
                 </div>
               </div>      
           </div>
           <div class="pMain__col">
               <div class="product__image">
-                <img src="../img/camera.jpg" alt="">
+                <img class="product__img" src="../img/camera.jpg" alt="">
               </div>
-              <h2 class="product__title">Mögnuð myndavél</h2>
-              <p class="product__text">Taktu mynd af öllu sem þú sérð.</p>
-              <div class="card__footer">
-                <div class="card__footer__row">
+              <div class="card__container"> 
+                <div class="container1">
+                  <h2 class="product__title">Mögnuð myndavél</h2>
+                  <p class="product__text">Taktu mynd af öllu sem þú sérð.</p>
+                </div>
+                <div class="container2">
                   <p class="product__price">1.999.900 kr.-</p>
-                </div>
-                <div class="card__footer__row">
                   <p class="product__amount">Fjöldi:</p>  
-                </div>
-                <div class="card__footer__row">
-                    <input type="text" name="fjöldi" value="1">
-                    <button class="button" name="fjöldi2"><img class="cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  <div class="button__container">
+                    <input class="pMain__input" type="text" name="fjöldi" value="1">
+                    <button class="pMain__button" name="fjöldi2"><img class="pMain__cartImage" src="../img/cart.svg">Setja í körfu</button>
+                  </div>
                 </div>
               </div> 
           </div>
@@ -151,37 +155,37 @@
           <div class="pFooter__col">
             <h3 class="pFooter__title">Vöruflokkar</h3>
             <ul class="pFooter__links">
-              <li><a class="pFooter__link" href="products.html">Nauðsynjavörur</a></li>
-              <li><a class="pFooter__link" href="products.html">Frábærar vörur</a></li>
-              <li><a class="pFooter__link" href="products.html">Ómissandi vörur</a></li>
-              <li><a class="pFooter__link" href="products.html">Ótrúlegar vörur</a></li>
-              <li><a class="pFooter__link" href="products.html">Magnaðar vörur</a></li>
+              <li class="li"><a class="pFooter__link" href="products.html">Nauðsynjavörur</a></li>
+              <li class="li"><a class="pFooter__link" href="products.html">Frábærar vörur</a></li>
+              <li class="li"><a class="pFooter__link" href="products.html">Ómissandi vörur</a></li>
+              <li class="li"><a class="pFooter__link" href="products.html">Ótrúlegar vörur</a></li>
+              <li class="li"><a class="pFooter__link" href="products.html">Magnaðar vörur</a></li>
             </ul>
           </div>
         <div class="pFooter__col">
           <h3 class="pFooter__title">Vöruflokkar</h3>
           <ul class="pFooter__links">
-            <li><a class="pFooter__link" href="products.html">Trylltar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Geggjaðar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Svakalegar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Fáránlegar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Klikkaðar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Trylltar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Geggjaðar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Svakalegar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Fáránlegar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Klikkaðar vörur</a></li>
           </ul>
         </div>
         <div class="pFooter__col">
           <h3 class="pFooter__title">Vöruflokkar</h3>
           <ul class="pFooter__links">
-            <li><a class="pFooter__link" href="products.html">Nýjar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Gamlar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Skrítnar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Nýjar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Gamlar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Skrítnar vörur</a></li>
           </ul>
         </div>
         <div class="pFooter__col">
           <h3 class="pFooter__title">Síður</h3>
           <ul class="pFooter__links">
-            <li><a class="pFooter__link" href="products.html">Allar vörur</a></li>
-            <li><a class="pFooter__link" href="products.html">Starfsfólk</a></li>
-            <li><a class="pFooter__link" href="products.html">Karfa</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Allar vörur</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Starfsfólk</a></li>
+            <li class="li"><a class="pFooter__link" href="products.html">Karfa</a></li>
           </ul>
         </div>
       </div>
