@@ -22,8 +22,15 @@ html { /* stylelint-disable-line */
   
 
 
+
 // TODO sækja allar sass skrár
 @import "scss/config.scss";
+@import "scss/products.scss";
+@import "scss/index.scss";
+@import "scss/staff.scss";
+
+
+
 
 
 .image{
