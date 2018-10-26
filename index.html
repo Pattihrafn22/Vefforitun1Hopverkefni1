@@ -10,144 +10,95 @@
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
-        <header class="iHeader">
-            <h1 class="iHeader__title">Vöruhúsið</h1>
-            <div class="iHeader__sub">
-              <div class="iHeader__box"></div>
-                <ul class="iHeader__links">
-                  <li><a class="iHeader__link" href="index.html">FORSÍÐA</a></li>
-                  <li><a class="iHeader__link" href="pages/products.html">VÖRUR</a></li>
-                  <li><a class="iHeader__link" href="pages/staff.html">STARFSFÓLK</a></li>
-                </ul>
-              <div class="iHeader__cart">
-                <a class="iHeader__link" href="pages/cart.html">
-                  <img class="iHeader__image" src="img/cart.svg"></img>Karfa (3)
-                </a>
-              </div>
-            </div>         
-          </header>
+    <header class="iHeader">
+        <h1 class="iHeader__title">Vöruhúsið</h1>
+        <div class="iHeader__sub">
+          <div class="iHeader__box"></div>
+            <ul class="iHeader__links">
+              <li class="li"><a class="iHeader__link1" href="index.html">FORSÍÐA</a></li>
+              <li class="li"><a class="iHeader__link1" href="pages/products.html">VÖRUR</a></li>
+              <li class="li"><a class="iHeader__link1" href="pages/staff.html">STARFSFÓLK</a></li>
+            </ul>
+          <div class="iHeader__cart">
+            <a class="iHeader__link2" href="pages/cart.html">
+            <img class="iHeader__image" src="img/cart.svg"></img>Karfa (3)
+            </a>
+          </div>
+        </div>         
+      </header>
     <main class=iMain>
       <div class="iMain__grid">
 
         <div class = "iMain__row">
           <div class = "iMain__col">
-          	<h2> Allar vörurnar </h2>
-          	<p> Vöruhúsið hefur allar þær vörur sem þig vantar </p>
-          	<!-- Hér kemur "skoða nánar"... takki? -->
+            <div class="iMain__content">
+          	  <h2 class="iMain__title"> Allar vörurnar </h2>
+            	<p class="iMain__text"> Vöruhúsið hefur allar þær vörur sem þig vantar </p>
+              <button class="iMain__button" name="vorur">Skoða vörur</button>
+            </div>
           </div>
           <div class="iMain__col">
-            <img class="iMain__image" src="img/products.jpg" alt="Vörur">
+            <div class="iMain__image">
+              <img class="iMain__img" src="img/products.jpg" alt="Vörur">
+            </div>
           </div>
         </div>
-
-        <div class="iMain__row">
-          <div class="iMain__col">
-            <img class="iMain__image" src="img/team.jpg" alt="Liðið leiðar">
+          <div class="iMain__row">
+            <div class="iMain__col">
+              <img class="iMain__image" src="img/team.jpg" alt="Liðið leiðar">
+            </div>
+            <div class="iMain__col">
+              <div class="iMain__content">
+          	    <h2 class="iMain__title"> Besta starfsfólkið </h2>
+          	    <p class="iMain__text"> Starfsfólkið hugsar vel um þig <p>
+                <button class="iMain__button" name="vorur">Kynnast starfsfólki</button>
+              </div>
+            </div>
           </div>
-          <div class="iMain__col">
-          	<h2> Besta starfsfólkið </h2>
-          	<p> Starfsfólkið hugssar vel um þig <p>
-          	<!-- Hér kemur "skoða nánar"... takki? -->
-          </div>
-        </div>
       </div>
-
-      <div class="iMain__row">
-        <div class="iMain__col">
-          <img class="iMain__image" src="img/team.jpg" alt="Liðið leiðar">
-        </div>
-        <div class="iMain__col">
-          <h2> Besta starfsfólkið </h2>
-          <p> Starfsfólkið hugssar vel um þig <p>
-              <!-- Hér kemur "skoða nánar"... takki? -->
-        </div>
-      </div>
-
-    </div>
   </main>
-  <footer class="iFooter">
-    <div class="iFooter__grid">
-      <div class="iFooter__row">
-        <div class="iFooter__col">
-          <h3 class="iFooter__title">Vöruflokkar</h3>
-          <ul class="iFooter__links">
-            <li><a class="iFooter__link" href="pages/products.html">Nauðsynjavörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Frábærar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Ómissandi vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Ótrúlegar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Magnaðar vörur</a></li>
-          </ul>
-        </div>
-        <div class="iFooter__col">
-          <h3 class="iFooter__title">Vöruflokkar</h3>
-          <ul class="iFooter__links">
-            <li><a class="iFooter__link" href="pages/products.html">Trylltar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Geggjaðar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Svakalegar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Fáránlegar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Klikkaðar vörur</a></li>
-          </ul>
-        </div>
-        <div class="iFooter__col">
-          <h3 class="iFooter__title">Vöruflokkar</h3>
-          <ul class="iFooter__links">
-            <li><a class="iFooter__link" href="pages/products.html">Nýjar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Gamlar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Skrítnar vörur</a></li>
-          </ul>
-        </div>
-        <div class="iFooter__col">
-          <h3 class="iFooter__title">Síður</h3>
-          <ul class="iFooter__links">
-            <li><a class="iFooter__link" href="pages/products.html">Allar vörur</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Starfsfólk</a></li>
-            <li><a class="iFooter__link" href="pages/products.html">Karfa</a></li>
-          </ul>
-        </div>
-      </div>
-    </main>
     <footer class="iFooter">
         <div class="iFooter__grid">
           <div class="iFooter__row">
             <div class="iFooter__col">
               <h3 class="iFooter__title">Vöruflokkar</h3>
               <ul class="iFooter__links">
-                <li><a class="iFooter__link" href="pages/products.html">Nauðsynjavörur</a></li>
-                <li><a class="iFooter__link" href="pages/products.html">Frábærar vörur</a></li>
-                <li><a class="iFooter__link" href="pages/products.html">Ómissandi vörur</a></li>
-                <li><a class="iFooter__link" href="pages/products.html">Ótrúlegar vörur</a></li>
-                <li><a class="iFooter__link" href="pages/products.html">Magnaðar vörur</a></li>
+                <li class="li"><a class="iFooter__link" href="pages/products.html">Nauðsynjavörur</a></li>
+                <li class="li"><a class="iFooter__link" href="pages/products.html">Frábærar vörur</a></li>
+                <li class="li"><a class="iFooter__link" href="pages/products.html">Ómissandi vörur</a></li>
+                <li class="li"><a class="iFooter__link" href="pages/products.html">Ótrúlegar vörur</a></li>
+                <li class="li"><a class="iFooter__link" href="pages/products.html">Magnaðar vörur</a></li>
               </ul>
             </div>
           <div class="iFooter__col">
             <h3 class="iFooter__title">Vöruflokkar</h3>
             <ul class="iFooter__links">
-              <li><a class="iFooter__link" href="pages/products.html">Trylltar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Geggjaðar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Svakalegar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Fáránlegar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Klikkaðar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Trylltar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Geggjaðar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Svakalegar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Fáránlegar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Klikkaðar vörur</a></li>
             </ul>
           </div>
           <div class="iFooter__col">
             <h3 class="iFooter__title">Vöruflokkar</h3>
             <ul class="iFooter__links">
-              <li><a class="iFooter__link" href="pages/products.html">Nýjar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Gamlar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Skrítnar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Nýjar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Gamlar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Skrítnar vörur</a></li>
             </ul>
           </div>
           <div class="iFooter__col">
             <h3 class="iFooter__title">Síður</h3>
             <ul class="iFooter__links">
-              <li><a class="iFooter__link" href="pages/products.html">Allar vörur</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Starfsfólk</a></li>
-              <li><a class="iFooter__link" href="pages/products.html">Karfa</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Allar vörur</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Starfsfólk</a></li>
+              <li class="li"><a class="iFooter__link" href="pages/products.html">Karfa</a></li>
             </ul>
           </div>
         </div>
       </div>
-      <p class="pFooter__credit">© 2018 Vöruhúsið</p>
+      <p class="iFooter__credit">© 2018 Vöruhúsið</p>
     </footer>
-
+  </body>
 </html>
