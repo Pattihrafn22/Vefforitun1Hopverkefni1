@@ -116,7 +116,7 @@
 .grid__h1,
 .grid__h2 {
   margin-bottom: 10px;
-  font-family: Oswald, sans-serif;
+  font-family: Oswald, Verdana, serif;
   font-size: 36px;
   font-weight: bold;
 }
@@ -128,9 +128,14 @@
 .grid__h3 {
   margin-top: 20px;
   margin-bottom: 10px;
-  font-family: Oswald, sans-serif;
+  font-family: Oswald, Verdana, serif;
   font-size: 21px;
   font-weight: bold;
+}
+
+.cart_p {
+  font-family: "Open Sans", helvetica, arial, sans-serif;
+  font-size: 16px;
 }
 
 .iHeader {
