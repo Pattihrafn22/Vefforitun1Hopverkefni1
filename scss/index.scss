@@ -1,9 +1,9 @@
 @import "scss/config";
 
-  .li:nth-of-type(1) {
-    text-decoration: underline;
-  }
-  
+.li__active {
+  text-decoration: underline;
+}
+
 /* EFNI Í INDEX */
 .iMain {
   padding-right: 20px;
@@ -91,4 +91,4 @@
     cursor: pointer;
     background-color: #000;
   }
-}
+} /* stylelint-disable-line */
