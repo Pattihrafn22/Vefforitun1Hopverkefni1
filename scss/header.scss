@@ -82,4 +82,22 @@
   &__link2:hover {
     color: #fff;
   }
+  
+  &__cart {
+    display: flex;
+    width: 33.3333333333%;
+    justify-content: flex-end;
+    padding: 10px;
+
+    @media (max-width: 700) {
+      width: 100%;
+      justify-content: center;
+    }
+  }
+
+  &__image {
+    width: 1.5em;
+    height: 1.5em;
+    padding-right: 0.2em;
+  }
 }
